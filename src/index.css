@@ -1,0 +1,81 @@
+@import "tailwindcss/base";
+@tailwind components;
+@import "tailwindcss/utilities";
+
+body {
+  background-color: #eee;
+  display: flex;
+  font-family: "Muli", sans-serif;
+}
+
+.contract,
+.existing-contracts {
+  margin: 20px;
+  display: inline-block;
+  padding: 40px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+h1 {
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 20px;
+}
+
+input[type="text"] {
+  padding: 6px;
+  font-size: 18px;
+}
+
+.button {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px;
+  padding: 10px 16px; /* Adjusted to match Tailwind's py-2 px-4 */
+  font-size: 16px; /* Approximate Tailwind equivalent for text size */
+  letter-spacing: 0.025em; /* Tailwind's standard letter-spacing */
+  border-radius: 0.25rem; /* Tailwind's rounded value */
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #1d4ed8; /* Tailwind's blue-700 */
+}
+
+.existing-contract ul {
+  padding: 10px;
+  margin: 20px;
+  background-color: #eee;
+}
+
+.existing-contract ul > li {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+.existing-contract ul > li > div {
+  margin: 0 5px;
+}
+
+.existing-contract ul > li > :first-child {
+  font-weight: bold;
+}
+
+.existing-contract .complete {
+  color: #5aa75a;
+  text-align: center;
+}
